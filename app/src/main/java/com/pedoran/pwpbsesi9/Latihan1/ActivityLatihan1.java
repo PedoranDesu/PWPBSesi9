@@ -91,6 +91,10 @@ public class ActivityLatihan1 extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
+            case R.id.item_vertical:
+                songRVLM = new LinearLayoutManager(this);
+                songRV.setLayoutManager(songRVLM);
+                break;
             case R.id.item_grid:
                 songRVLM = new GridLayoutManager(this,2);
                 songRV.setLayoutManager(songRVLM);
